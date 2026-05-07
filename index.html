@@ -97,6 +97,39 @@ header p {
       
     }
 
+    .team-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.team-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.team-card h3 {
+  color: #004080;
+  margin-bottom: 8px;
+}
+
+.team-card p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.team-desc {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  font-size: 1rem;
+}
+
     .project-block {
       margin-bottom: 40px;
     }
@@ -248,14 +281,24 @@ header p {
 
 <section id="team">
   <h2>Our Team</h2>
-  <p> Zainab Saeed Hassan and Noora Waleed Alabbasi</p>
-  <p>We are a dedicated two-member team from the University of Bahrain’s CIT Department. Together, we combined our strengths in frontend design, backend development, and research to build a secure, gamified learning system. Our collaboration allowed us to balance creativity with technical depth, ensuring the project was both innovative and practical.</p>
-
-
+  <div class="team-grid">
+    <div class="team-card">
+      <h3>Zainab Saeed Hassan</h3>
+      <p>Co‑developer & Researcher</p>
+    </div>
+    <div class="team-card">
+      <h3>Noora Waleed Alabbasi</h3>
+      <p>Co‑developer & Researcher</p>
+    </div>
+  </div>
+  <p class="team-desc">
+    We are a dedicated two‑member team from the University of Bahrain’s CIT Department. Together, we collaborated on every aspect of the project — from design and development to testing and research — ensuring that our work was cohesive, innovative, and practical.
+  </p>
 </section>
+
 <section id="contact">
   <h2>Contact Us</h2>
-  <p>Email: <a href="mailto:info@smartparking-system.com">info@smartparking-system.com</a></p>
+  <p>Email: <a href="mailto:info@smartparking-system.com">xpacademybh@gmail.com</a></p>
 </section>
 </section>
 <footer>
