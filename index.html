@@ -158,6 +158,28 @@ header p {
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
 
+    #methodology {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+#methodology h2 {
+  border-bottom: 2px solid #004080;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  color: #004080;
+}
+
+#methodology p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+
     .gallery {
       display: flex;
       flex-wrap: wrap;
@@ -199,6 +221,27 @@ header p {
   font-size: 1.2rem;
 }
 
+#abstract {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+#abstract h2 {
+  border-bottom: 2px solid #004080;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  color: #004080;
+}
+
+#abstract p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify; /* matches academic style */
+}
+
     }
   </style>
 </head>
@@ -216,13 +259,27 @@ header p {
 
 <nav>
   <a href="#project">Overview</a>
-  <a href="#components">Website Components</a>
+  <a href="#tools">tools</a>
   <a href="#team">Team</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <section id="project">
   <h2>Our Project</h2>
+
+  <section id="abstract">
+  <h2>Abstract</h2>
+  <p>
+    This project introduces a gamified web application designed to enhance learning for both
+    instructors and students. By integrating gaming elements into an educational platform, the
+    system addresses challenges such as procrastination and lack of motivation, restoring
+    engagement and focus in the learning process. Instructors benefit from built‑in performance
+    monitoring tools that provide insights into student progress and support those less inclined
+    to participate in class. Developed with modern web technologies, secure communication, and
+    AI‑powered recommendations, the system successfully combines usability, innovation, and
+    engagement, demonstrating that education can be both effective and enjoyable.
+  </p>
+</section>
 
   <div class="project-block">
     <h3>The Problem</h3>
@@ -244,40 +301,98 @@ header p {
     </ul>
   </div>
 
-  <!-- Tools -->
-  <div class="project-block">
-    <h3>Tools & Technologies</h3>
-    <div class="tools-grid">
-      <div class="tool-card"><img src="assets/react_logo.png" alt="React Logo"><p>React.js</p></div>
-      <div class="tool-card"><img src="assets/nodejs_logo.png" alt="Node.js Logo"><p>Node.js</p></div>
-      <div class="tool-card"><img src="assets/prisma_logo.png" alt="Prisma Logo"><p>Prisma</p></div>
-      <div class="tool-card"><img src="assets/postgreSQL_logo.png" alt="PostgreSQL Logo"><p>PostgreSQL</p></div>
-      <div class="tool-card"><img src="assets/python.png" alt="Python Logo"><p>Python</p></div>
-      <div class="tool-card"><img src="assets/openAI_logo.png" alt="OpenAI Logo"><p>OpenAI</p></div>
-      <div class="tool-card"><img src="assets/chartjs_logo.png" alt="Chart.js Logo"><p>Chart.js</p></div>
-      <div class="tool-card"><img src="assets/supabass_logo.png" alt="Supabase Logo"><p>Supabase</p></div>
-    </div>
+  <section id="methodology">
+  <h2>Methodology</h2>
+  <p>
+    The system was implemented by converting the design into a functional prototype using modern
+    tools and frameworks. Development relied on GitHub for collaboration, VS Code for coding,
+    PostgreSQL with Supabase for database and storage, and JWTs for secure authentication.
+    A custom RESTful API connected the frontend (Next.js, TypeScript, Tailwind) with the backend,
+    while Supabase buckets and file‑processing packages enabled AI‑powered quiz generation through
+    the OpenAI API. Docker ensured cross‑platform compatibility, and deployment was handled via
+    Vercel (frontend) and Render (backend). Testing validated usability, performance, and overall
+    system reliability.
+  </p>
+</section>
+
+<!-- Tools -->
+<div class="project-block" id="tools">
+  <h3>Tools & Technologies</h3>
+
+  <!-- Development & Collaboration -->
+  <h4>Development & Collaboration</h4>
+  <div class="tools-grid">
+    <div class="tool-card"><img src="assets/GitHub_logo.png" alt="GitHub Logo"><p>GitHub</p></div>
+    <div class="tool-card"><img src="assets/react_logo.png" alt="React Logo"><p>React.js</p></div>
+    <div class="tool-card"><img src="assets/nodejs_logo.png" alt="Node.js Logo"><p>Node.js</p></div>
+    <div class="tool-card"><img src="assets/prisma_logo.png" alt="Prisma Logo"><p>Prisma</p></div>
   </div>
+
+  <!-- Database & Security -->
+  <h4>Database & Security</h4>
+  <div class="tools-grid">
+    <div class="tool-card"><img src="assets/postgreSQL_logo.png" alt="PostgreSQL Logo"><p>PostgreSQL</p></div>
+    <div class="tool-card"><img src="assets/supabass_logo.png" alt="Supabase Logo"><p>Supabase</p></div>
+    <div class="tool-card"><img src="assets/restAPI.png" alt="REST API Logo"><p>RESTful API</p></div>
+    <div class="tool-card"><img src="assets/docker_logo.png" alt="Docker Logo"><p>Docker</p></div>
+  </div>
+
+  <!-- AI & Analytics -->
+  <h4>AI & Analytics</h4>
+  <div class="tools-grid">
+    <div class="tool-card"><img src="assets/openAI_logo.png" alt="OpenAI Logo"><p>OpenAI</p></div>
+    <div class="tool-card"><img src="assets/chartjs_logo.png" alt="Chart.js Logo"><p>Chart.js</p></div>
+  </div>
+
+  <!-- Deployment -->
+  <h4>Deployment</h4>
+  <div class="tools-grid">
+    <div class="tool-card"><img src="assets/Vercel_logo.png" alt="Vercel Logo"><p>Vercel</p></div>
+    <div class="tool-card"><img src="assets/renders.png" alt="Render Logo"><p>Render</p></div>
+  </div>
+</div>
 
   <div class="project-block">
     <h3>Sketches & Database Design</h3>
     <div class="gallery">
-      <img src="assets/sketch1.png" alt="Sketch 1">
-      <img src="assets/sketch2.png" alt="Sketch 2">
-      <img src="assets/database-er.png" alt="Database ER Diagram">
+      <img src="assets/Inst_cre_quiz.png" alt="Sketch 1">
+      <img src="assets/class_diagram.png" alt="Sketch 2">
+      <img src="assets/use_case.png" alt="Database ER Diagram">
     </div>
   </div>
 
+  <section id="results">
+  <h2>Results</h2>
+  <p>
+    The system successfully integrated gamification, secure communication, and AI‑powered features
+    into a functional prototype. Testing confirmed that the platform improved usability,
+    engagement, and performance monitoring, while maintaining reliability and scalability across
+    different environments. Students demonstrated increased motivation and focus, and instructors
+    benefited from clear insights into progress and participation.
+  </p>
+</section>
 
-<section id="components">
+<section id="conclusion">
+  <h2>Conclusion & Future Work</h2>
+  <p>
+    In conclusion, the project achieved its goal of combining gaming elements with education to
+    create a secure, engaging, and practical learning system. The platform balanced innovation
+    with usability, offering value to both students and instructors. Future work will focus on
+    expanding analytics, enhancing personalization through AI, and scaling deployment to support
+    broader adoption across diverse academic settings.
+  </p>
+</section>
+
+
+
+<!-- <section id="components">
   <h2>Website Components</h2>
   <ul>
     <li><strong>Domain Name:</strong> www.xpacademybh.me</li>
-    <li><strong>Hosting:</strong> [Insert hosting provider]</li>
-    <li><strong>Professional Email:</strong> xpacademybh@gmail.com</li>
-    <li><strong>Website:</strong> [Brief description of your site’s content and design]</li>
+    <li><strong>Professional Email:</strong> info@xpacademybh.online</li>
+    <!-- <li><strong>Website:</strong> [Brief description of your site’s content and design]</li> -->
   </ul>
-</section>
+</section> -->
 
 <section id="team">
   <h2>Our Team</h2>
@@ -292,13 +407,13 @@ header p {
     </div>
   </div>
   <p class="team-desc">
-    We are a dedicated two‑member team from the University of Bahrain’s CIT Department. Together, we collaborated on every aspect of the project — from design and development to testing and research — ensuring that our work was cohesive, innovative, and practical.
+    We are a dedicated two‑member team from the University of Bahrain’s CS Department. Together, we collaborated on every aspect of the project — from design and development to testing and research — ensuring that our work was cohesive, innovative, and practical.
   </p>
 </section>
 
 <section id="contact">
   <h2>Contact Us</h2>
-  <p>Email: <a href="mailto:info@smartparking-system.com">xpacademybh@gmail.com</a></p>
+  <p>Email: <a href="mailto:info@xpacademybh.online">info@xpacademybh.online</a></p>
 </section>
 </section>
 <footer>
